@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    >
+
+    <title>Soul AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Шапка -->
+        <header class="header">
+            <div class="brand">
+                <div class="logo">S</div>
+
+                <div>
+                    <h1>Soul AI</h1>
+                    <span>
+                        <i class="status-dot"></i>
+                        Online
+                    </span>
+                </div>
+            </div>
+
+            <button
+                class="clear-button"
+                id="clearChat"
+                aria-label="Очистить чат"
+            >
+                🗑
+            </button>
+        </header>
+
+
+        <!-- Чат -->
+        <main class="chat" id="chat">
+
+            <div class="welcome" id="welcome">
+                <div class="welcome-logo">S</div>
+
+                <h2>Привет 👋</h2>
+
+                <p>
+                    Я — Soul AI.<br>
+                    Это только начало нашего проекта.
+                </p>
+
+                <div class="suggestions">
+                    <button class="suggestion">
+                        Расскажи о себе
+                    </button>
+
+                    <button class="suggestion">
+                        Что ты умеешь?
+                    </button>
+
+                    <button class="suggestion">
+                        Давай начнём
+                    </button>
+                </div>
+            </div>
+
+        </main>
+
+
+        <!-- Ввод -->
+        <footer class="input-area">
+
+            <form id="messageForm" class="input-box">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Напиши Soul..."
+                    rows="1"
+                    autocomplete="off"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    id="sendButton"
+                    class="send-button"
+                    aria-label="Отправить"
+                >
+                    ➤
+                </button>
+
+            </form>
+
+            <div class="footer-text">
+                Soul AI 0.1 • Project Soul
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
